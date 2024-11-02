@@ -8,10 +8,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Welcome Message
-              run: echo "My first GitHu Actions Job"
+              run: echo "Welcome to the world of CI/CD through GitHu Actions"
 
-            - name: List Files 
-              run: ls 
+            - name: List all files including hidden files
+              run: ls -1a
 
-            - name: Read file 
-              run: cat dockerfile
+            - name: Show Present Working Directory 
+              run: pwd
