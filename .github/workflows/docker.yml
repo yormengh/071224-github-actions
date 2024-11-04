@@ -1,7 +1,16 @@
 name: Docker Workflow
 
 on:
-  - push
+   push:
+    branches:
+      - demo
+
+    paths:
+      - ./css/**
+      - ./js/**
+      - index.html
+      - dockerfile
+   workflow_dispatch:
 
 env:
     CONTAINER_REGISTRY: docker.io
