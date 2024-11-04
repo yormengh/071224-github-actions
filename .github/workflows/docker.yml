@@ -5,6 +5,12 @@ on:
     branches:
       - demo
 
+    paths:
+      - ./css/**
+      - ./js/**
+      - index.html
+      - dockerfile
+
 env:
     CONTAINER_REGISTRY: docker.io
     IMAGE_NAME: resume-app
