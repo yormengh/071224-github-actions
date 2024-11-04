@@ -1,19 +1,7 @@
 name: Docker Workflow
 
 on:
-  #  push:
-  #   branches:
-  #     - demo
-
-  #   # paths:
-  #   #   - ./css/**
-  #   #   - ./js/**
-  #   #   - index.html
-  #   #   - dockerfile
-  # pull_request:
-  #   types: # [opened, closed]
-  #   - opened
-  #   - closed
+ 
   schedule:
     - cron: "*/1 * * * *"
   workflow_dispatch:
