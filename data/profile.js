@@ -1,10 +1,10 @@
 const profileData = {
   title: "Resume",
   name: "Moses Amartey",
-  sub_title: "System Administrator and DevOps Engineer",
+  sub_title: "DevOps Engineer",
   logoURL: "assets/images/dp.jpg",
   about: {
-    intro: `DevOps Engineer with a focus on applying DevSecOps engineering principles to ensure secure software integration and delivery. Skilled in building and managing CI/CD pipelines, automating cloud infrastructure with IaC tools, and implementing robust monitoring and security practices. Committed to optimizing performance, leading incident management, and fostering a culture of collaboration and continuous improvement. Strong technical skills allow for enhanced efficiency, reliability, and high availability across software development platforms.`,
+    intro: `Analytical thinking DevOps Engineer focused on applying DevSecOps engineering principles using both traditional and innovative methods, ensuring seamless security of software integration and delivery. Dedicated to building and managing CI/CD pipelines as well as automating cloud infrastructure management and provisioning using IaC tools, and implementing robust monitoring and security practices. Committed to optimizing performance, leading incident management, and fostering a culture of collaboration and continuous improvement. And with my Technical skills, I am able to enhance efficiency, reliability and high availability across all Software development platforms.`,
     contact: {
       email: "yormengh@gmail.com",
       phone: "+233555910005",
@@ -84,17 +84,17 @@ const profileData = {
   projects: [
     {
       title: "DevOps Full-Stack Bank Application",
-      duration: "N/A",
-      desc: `Developed and deployed a full-stack bank application using CI/CD pipeline tools like Jenkins and GitHub Actions.`,
+      duration: "July - Nov 2024",
+      desc: `Built and deployed a full-stack bank application using Docker, Kubernetes, Helm, and IaC tools like Terraform and as well using CI/CD tool like Github Actions, and Jenkins.`,
     },
     {
       title: "Netflix Clone on AWS",
-      duration: "N/A",
+      duration: "Jun - Oct 2023",
       desc: `Set up a DevSecOps environment with CI/CD, security integration, monitoring, and GitOps principles for a Netflix clone on AWS.`,
     },
     {
       title: "Kubernetes Three-Tier Project",
-      duration: "N/A",
+      duration: "May - Aug 2022",
       desc: `Built a three-tier architecture on AWS EKS using Terraform, ArgoCD, Helm, Prometheus, Grafana, and Jenkins.`,
     },
   ],
@@ -131,9 +131,9 @@ const profileData = {
   education: [
     {
       alma: "Evangelical Presbyterian University College",
-      duration: "N/A",
+      duration: "2010 - 2014",
       std: "Bachelor of Science: Business Administration",
-      score: "N/A",
+      score: "71.00%",
     },
   ],
   certifications: [],
