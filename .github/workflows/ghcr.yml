@@ -37,5 +37,5 @@ jobs:
 
     - name: Publish code to GHCR
       run: |
-        docker build -t ghcr.io/jomacs-it/resume-app:latest .
-        docker push ghcr.io/jomacs-it/resume-app:latest
+        docker build -t ghcr.io/yormengh/resume-app:latest .
+        docker push ghcr.io/yormengh/resume-app:latest
