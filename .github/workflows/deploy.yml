@@ -37,14 +37,14 @@ jobs:
       run: docker push ${{ env.CONTAINER_REGISTRY }}/${{ vars.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
 
   docker_deploy:  
-  needs: docker_build
-  runs-on: ubuntu-latest 
-  
-  steps:
-    - name: Docker Login
-      run: docker login --username=${{ vars.DOCKER_USERNAME }} --password=${{ secrets.DOCKER_PASSWORD }}
+     needs: docker_build
+     runs-on: ubuntu-latest 
     
-    - name: Docker Deploy
-      timeout-minutes: 1
-      run: |
-     docker run -d -p 8080:80 ${{ env.CONTAINER_REGISTRY }}/${{ vars.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+     steps:
+      - name: Docker Login
+        run: docker login --username=${{ vars.DOCKER_USERNAME }} --password=${{ secrets.DOCKER_PASSWORD }}
+                
+      - name: Docker Deploy
+        timeout-minutes: 1
+        run: |
+         docker run -d -p 8080:80 ${{ env.CONTAINER_REGISTRY }}/${{ vars.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
